@@ -18,10 +18,10 @@ Yeh chapter ROS 2 ke sath kaam karne ke liye required foundational knowledge est
 
 ## Sections in Yeh Chapter
 
-1. [ROS 2 kya hai?](./chapter-1-introduction-to-ros2/what-is-ros2.md) - Fundamentals ko samajhna
-2. [ROS 2 vs ROS 1](./chapter-1-introduction-to-ros2/ros2-vs-ros1.md) - Key differences aur improvements
-3. [Installation aur Setup](./chapter-1-introduction-to-ros2/installation-setup.md) - Environment configuration
-4. [ROS 2 Ecosystem aur Tools](./chapter-1-introduction-to-ros2/ros2-ecosystem-tools.md) - Available packages aur tools
+1. [ROS 2 kya hai?](./what-is-ros2.md) - Fundamentals ko samajhna
+2. [ROS 2 vs ROS 1](./ros2-vs-ros1.md) - Key differences aur improvements
+3. [Installation aur Setup](./installation-setup.md) - Environment configuration
+4. [ROS 2 Ecosystem aur Tools](./ros2-ecosystem-tools.md) - Available packages aur tools
 
 ## Prerequisites
 

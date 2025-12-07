@@ -1,0 +1,67 @@
+.textSelectionButton {
+    position: fixed;
+    transform: translate(-50%, -100%);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(10, 10, 12, 0.95);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    color: #e4e4e7;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3),
+                0 0 0 1px rgba(255, 255, 255, 0.05);
+    transition: all 0.2s ease;
+    animation: fadeInScale 0.2s ease-out;
+    user-select: none;
+}
+
+.textSelectionButton:hover {
+    background: rgba(10, 10, 12, 0.98);
+    border-color: var(--ifm-color-primary);
+    transform: translate(-50%, -100%) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4),
+                0 0 0 1px var(--ifm-color-primary);
+}
+
+.textSelectionButton:active {
+    transform: translate(-50%, -100%) scale(0.95);
+}
+
+.textSelectionButton svg {
+    color: var(--ifm-color-primary);
+    flex-shrink: 0;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -100%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -100%) scale(1);
+    }
+}
+
+/* Dark mode adjustments */
+html[data-theme='dark'] .textSelectionButton {
+    background: rgba(10, 10, 12, 0.95);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+html[data-theme='light'] .textSelectionButton {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #27272a;
+}
+
+html[data-theme='light'] .textSelectionButton:hover {
+    background: rgba(255, 255, 255, 0.98);
+    border-color: var(--ifm-color-primary);
+}

@@ -3,6 +3,7 @@ import AuthProvider from "@site/src/components/Auth/AuthProvider";
 import AuthUIProvider from "@site/src/components/Auth/AuthUIProvider";
 
 import AskButton from '@site/src/components/AskButton';
+import TextSelectionButton from '@site/src/components/TextSelectionButton';
 
 /**
  * Root component wrapper for Docusaurus
@@ -14,6 +15,7 @@ export default function Root({ children }: { children: React.ReactNode }) {
             <AuthUIProvider>
                 {children}
                 <AskButton />
+                <TextSelectionButton />
             </AuthUIProvider>
         </AuthProvider>
     );

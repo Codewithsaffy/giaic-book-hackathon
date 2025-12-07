@@ -19,11 +19,11 @@ Yeh chapter artificial intelligence aur robotics ke darmiyan gap ko python-based
 
 ## Sections in This Chapter
 
-1. [Introduction](./chapter-3-python-ai-ros-integration/intro.md) - AI-ROS integration ka overview
-2. [Connecting Python AI Frameworks with ROS](./chapter-3-python-ai-ros-integration/bridging-python-ros.md) - PyTorch aur TensorFlow integration
-3. [Creating Custom ROS Messages for AI Data](./chapter-3-python-ai-ros-integration/custom-message-types.md) - Custom message design
-4. [Building Real-time Data Pipelines](./chapter-3-python-ai-ros-integration/realtime-data-pipelines.md) - Efficient data processing
-5. [Handling Latency and Synchronization](./chapter-3-python-ai-ros-integration/latency-synchronization.md) - Timing constraints aur sync
+1. [Introduction](./intro.md) - AI-ROS integration ka overview
+2. [Connecting Python AI Frameworks with ROS](./bridging-python-ros.md) - PyTorch aur TensorFlow integration
+3. [Creating Custom ROS Messages for AI Data](./custom-message-types.md) - Custom message design
+4. [Building Real-time Data Pipelines](./realtime-data-pipelines.md) - Efficient data processing
+5. [Handling Latency and Synchronization](./latency-synchronization.md) - Timing constraints aur sync
 
 ## Prerequisites
 

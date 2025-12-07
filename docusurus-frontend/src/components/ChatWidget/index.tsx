@@ -27,9 +27,10 @@ interface ChatResponse {
 
 interface ChatWidgetProps {
     onClose: () => void;
+    initialMessage?: string;
 }
 
-export default function ChatWidget({ onClose }: ChatWidgetProps): JSX.Element {
+export default function ChatWidget({ onClose, initialMessage }: ChatWidgetProps): JSX.Element {
     const [input, setInput] = useState('');
     const [messages, setMessages] = useState<Message[]>([
         {
@@ -40,6 +41,7 @@ export default function ChatWidget({ onClose }: ChatWidgetProps): JSX.Element {
     ]);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
+    const [hasSubmittedInitial, setHasSubmittedInitial] = useState(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     const scrollToBottom = () => {
@@ -50,14 +52,28 @@ export default function ChatWidget({ onClose }: ChatWidgetProps): JSX.Element {
         scrollToBottom();
     }, [messages]);
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    // Auto-submit initial message if provided
+    useEffect(() => {
+        if (initialMessage && !hasSubmittedInitial) {
+            setHasSubmittedInitial(true);
+            setInput(initialMessage);
+
+            // Submit after a short delay to ensure UI is ready
+            setTimeout(() => {
+                const syntheticEvent = { preventDefault: () => { } } as React.FormEvent;
+                handleSubmitWithMessage(initialMessage, syntheticEvent);
+            }, 100);
+        }
+    }, [initialMessage, hasSubmittedInitial]);
+
+    const handleSubmitWithMessage = async (message: string, e: React.FormEvent) => {
         e.preventDefault();
-        if (!input.trim() || isLoading) return;
+        if (!message.trim() || isLoading) return;
 
         const userMessage: Message = {
             id: Date.now().toString(),
             role: 'user',
-            content: input
+            content: message
         };
 
         setMessages(prev => [...prev, userMessage]);
@@ -67,7 +83,7 @@ export default function ChatWidget({ onClose }: ChatWidgetProps): JSX.Element {
 
         try {
             const requestBody: ChatRequest = {
-                question: input,
+                question: message,
                 top_k: 3
             };
 
@@ -107,6 +123,10 @@ export default function ChatWidget({ onClose }: ChatWidgetProps): JSX.Element {
         } finally {
             setIsLoading(false);
         }
+    };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        handleSubmitWithMessage(input, e);
     };
 
     return (

@@ -19,11 +19,11 @@ Yeh chapter URDF (Unified Robot Description Format) ka istemal karke detailed ro
 
 ## Sections in This Chapter
 
-1. [Introduction](./chapter-4-urdf-humanoid-robots/intro.md) - Humanoid robot modeling ka overview
-2. [Understanding URDF XML Structure](./chapter-4-urdf-humanoid-robots/urdf-structure.md) - URDF format aur components
-3. [Modeling Humanoid Kinematics](./chapter-4-urdf-humanoid-robots/modeling-kinematics.md) - Kinematic chains aur hierarchies
-4. [Joint Types and Constraints](./chapter-4-urdf-humanoid-robots/joint-types.md) - Humanoids ke liye joint configurations
-5. [Visual and Collision Geometries](./chapter-4-urdf-humanoid-robots/visual-collision-geometries.md) - Geometry optimization
+1. [Introduction](./intro.md) - Humanoid robot modeling ka overview
+2. [Understanding URDF XML Structure](./urdf-structure.md) - URDF format aur components
+3. [Modeling Humanoid Kinematics](./modeling-kinematics.md) - Kinematic chains aur hierarchies
+4. [Joint Types and Constraints](./joint-types.md) - Humanoids ke liye joint configurations
+5. [Visual and Collision Geometries](./visual-collision-geometries.md) - Geometry optimization
 
 ## Prerequisites
 
