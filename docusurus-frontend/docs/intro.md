@@ -1,48 +1,92 @@
 ---
 sidebar_position: 1
-draft: true
 ---
 
 # Getting Started
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to **Physical AI & Humanoid Robotics**! This comprehensive guide will take you from ROS 2 fundamentals to building intelligent humanoid robots using cutting-edge technologies.
 
 ## Getting Started
 
-Get started by **creating a new site**.
+Begin your journey into humanoid robotics by understanding the core concepts and setting up your development environment.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+**Start with Module 1** to learn ROS 2 fundamentals, then progress through simulation, vision-language-action models, and real-world deployment.
 
-### What you'll need
+### What You'll Need
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Before diving into the course material, ensure you have:
 
-## Generate a new site
+- **Operating System**: Ubuntu 22.04 LTS (recommended for ROS 2 Humble)
+- **Hardware**: 
+  - Minimum 8GB RAM (16GB+ recommended for simulation)
+  - GPU with CUDA support (for Isaac Sim and VLA models)
+  - At least 50GB free disk space
+- **Software Prerequisites**:
+  - Python 3.10+
+  - Basic understanding of robotics concepts
+  - Familiarity with command line tools
 
-Generate a new Docusaurus site using the **classic template**.
+## Course Structure
 
-The classic template will automatically be added to your project after you run the command:
+This book is organized into comprehensive modules:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### **Module 1: ROS 2 Fundamentals**
+Learn the core concepts of ROS 2, including:
+- ROS 2 architecture and DDS middleware
+- Nodes, topics, services, and actions
+- Creating publishers and subscribers
+- Building your first robot controller
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### **Module 2: Isaac Sim & Simulation**
+Master robot simulation with NVIDIA Isaac Sim:
+- Setting up Isaac Sim environment
+- Creating digital twins of humanoid robots
+- Physics simulation and sensor integration
+- Testing and validation workflows
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+### **Module 3: Vision-Language-Action Models**
+Explore state-of-the-art AI for robotics:
+- Understanding VLA architecture
+- Training models for manipulation tasks
+- Integrating perception with action
+- Real-world applications
 
-## Start your site
+### **Module 4: Integration & Deployment**
+Bring everything together:
+- End-to-end system integration
+- Hardware deployment strategies
+- Performance optimization
+- Safety and reliability considerations
 
-Run the development server:
+## Quick Start Path
 
-```bash
-cd my-website
-npm run start
-```
+Choose your learning path based on your background:
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+**🚀 For Beginners**: Start with Module 1, Chapter 1 to understand ROS 2 basics
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+**🔧 For ROS 1 Users**: Jump to Module 1, ROS 2 vs ROS 1 comparison
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+**🤖 For Simulation Experts**: Begin with Module 2 to explore Isaac Sim
+
+**🧠 For AI/ML Practitioners**: Start with Module 3 on VLA models
+
+## Interactive Features
+
+This documentation platform includes:
+
+- 📝 **AI Chat Assistant**: Select any text and click "Ask AI" to get explanations
+- 💡 **Code Examples**: All code snippets are ready to copy and run
+- 🎯 **Hands-on Projects**: Practical exercises throughout each module
+- 🔍 **Search**: Quickly find topics using the search bar
+
+## Community & Support
+
+Join our community of robotics enthusiasts:
+
+- **Discord**: Real-time discussions and support
+- **GitHub**: Access code repositories and contribute
+- **Office Hours**: Weekly live Q&A sessions
+
+---
+
+Ready to begin? **[Start with Module 1 →](./module-1-ros2/)**
