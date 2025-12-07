@@ -69,3 +69,7 @@ Digital twins are especially valuable for humanoid robots due to their complexit
 - **Path Planning**: Testing navigation in complex environments
 
 In the next section, we'll explore the importance of digital twins in modern robotics development.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

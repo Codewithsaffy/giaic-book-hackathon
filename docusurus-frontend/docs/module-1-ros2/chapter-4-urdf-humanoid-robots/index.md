@@ -34,3 +34,7 @@ This chapter focuses on creating detailed robot models using URDF (Unified Robot
 ## Next Steps
 
 After completing this chapter, you'll have comprehensive knowledge of ROS 2 and humanoid robot modeling. You'll be ready to tackle advanced topics in the subsequent modules of this curriculum.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

@@ -1,10 +1,9 @@
 {
-    "label": "Module 4: VLA Models",
-    "position": 4,
+    "label": "Chapter 3: Unity Robotics",
+    "position": 3,
     "link": {
         "type": "doc",
         "id": "index"
     },
-    "collapsible": true,
     "collapsed": true
 }

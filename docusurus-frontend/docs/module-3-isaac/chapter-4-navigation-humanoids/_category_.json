@@ -1,10 +1,9 @@
 {
-    "label": "Module 4: VLA Models",
+    "label": "Chapter 4: Navigation for Humanoids",
     "position": 4,
     "link": {
         "type": "doc",
         "id": "index"
     },
-    "collapsible": true,
     "collapsed": true
 }

@@ -118,6 +118,58 @@
   border-top-right-radius: 2px;
 }
 
+/* Markdown Styles */
+.markdownContent {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.markdownContent p {
+  margin-bottom: 0.75rem;
+}
+
+.markdownContent p:last-child {
+  margin-bottom: 0;
+}
+
+.markdownContent strong {
+  font-weight: 600;
+  color: #fff;
+}
+
+.markdownContent ul, 
+.markdownContent ol {
+  margin: 0.5rem 0 0.5rem 1.25rem;
+  padding: 0;
+}
+
+.markdownContent li {
+  margin-bottom: 0.25rem;
+}
+
+.markdownContent code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.markdownContent pre {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.markdownContent pre code {
+  background: transparent;
+  padding: 0;
+  font-size: 0.85em;
+  color: #e4e4e7;
+}
+
 .messageActions {
   display: flex;
   gap: 0.5rem;

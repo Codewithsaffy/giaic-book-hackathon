@@ -201,3 +201,7 @@ Humanoid navigation must prioritize safety:
 - **Safe Landing**: Safe fall strategies if needed
 
 This chapter will explore these concepts in detail, covering the implementation of GPU-accelerated navigation systems specifically designed for humanoid robots using the Isaac platform.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

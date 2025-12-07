@@ -47,3 +47,7 @@ By the end of this module, you will have created:
 ## Next Steps
 
 Begin with Chapter 1 to establish your ROS 2 development environment and understand the fundamental concepts that will power your humanoid robotics applications throughout this curriculum.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

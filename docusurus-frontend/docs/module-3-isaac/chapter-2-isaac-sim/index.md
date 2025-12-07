@@ -109,3 +109,7 @@ This chapter will cover:
 4. Learning about synthetic data generation and domain randomization
 
 Isaac Sim provides the foundation for creating highly realistic digital twins that can accelerate robotics development and enable advanced AI training. The following sections will explore these capabilities in detail.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

@@ -126,11 +126,11 @@ const config: Config = {
             },
             {
               label: 'ROS 2 Modules',
-              to: '/docs/category/module-1-ros2',
+              to: '/docs/module-1-ros2/',
             },
             {
               label: 'Simulation',
-              to: '/docs/category/module-2-digital-twin',
+              to: '/docs/module-2-digital-twin/',
             },
           ],
         },

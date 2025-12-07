@@ -1,10 +1,9 @@
 {
-    "label": "Module 4: VLA Models",
-    "position": 4,
+    "label": "Chapter 1: Introduction to Digital Twins",
+    "position": 1,
     "link": {
         "type": "doc",
         "id": "index"
     },
-    "collapsible": true,
     "collapsed": true
 }

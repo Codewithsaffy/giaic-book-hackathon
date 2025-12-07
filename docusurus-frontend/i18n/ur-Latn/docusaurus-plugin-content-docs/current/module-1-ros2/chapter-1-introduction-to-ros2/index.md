@@ -32,3 +32,7 @@ Yeh chapter ROS 2 ke sath kaam karne ke liye required foundational knowledge est
 ## Next Steps
 
 Yeh chapter complete karne ke baad, aapke paas ROS 2 fundamentals ka solid understanding aur properly configured development environment hoga. Chapter 2 mein aage jaen ROS 2 communication patterns mein gahrai se jaaneka liye.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

@@ -89,3 +89,7 @@ This chapter will guide you through:
 5. Developing custom plugins for specialized functionality
 
 Gazebo provides the foundation for creating realistic digital twins of humanoid robots, enabling safe and efficient development of complex robotic behaviors. In the next sections, we'll explore Gazebo's architecture and implementation details.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

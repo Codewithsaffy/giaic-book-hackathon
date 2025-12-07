@@ -49,3 +49,7 @@ Yeh module ke khatam hone tak, aap banayege:
 ## Next Steps
 
 Chapter 1 se start karen apna ROS 2 development environment establish karne aur fundamental concepts ko samajhne ke liye jo is curriculum mein aapke humanoid robotics applications ko power karega.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

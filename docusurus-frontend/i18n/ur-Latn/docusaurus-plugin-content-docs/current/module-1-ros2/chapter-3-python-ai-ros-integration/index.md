@@ -34,3 +34,7 @@ Yeh chapter artificial intelligence aur robotics ke darmiyan gap ko python-based
 ## Next Steps
 
 Yeh chapter complete karne ke baad, aap AI systems ko ROS 2 infrastructure ke sath integrate karne mein saksham honge. URDF ka istemal karke robot modeling seekhne ke liye Chapter 4 mein proceed karen.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

@@ -36,3 +36,7 @@ Before starting this module, ensure you have:
 - Access to a computer with sufficient processing power for simulation
 
 Let's begin by exploring the fundamental concepts of digital twin technology in robotics.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

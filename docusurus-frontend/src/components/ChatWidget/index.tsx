@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import styles from './styles.module.css';
 
 interface Message {
@@ -22,7 +23,7 @@ interface ChatRequest {
 
 interface ChatResponse {
     answer: string;
-    sources: Source[];
+    sources?: Source[];
 }
 
 interface ChatWidgetProps {
@@ -72,7 +73,8 @@ export default function ChatWidget({ onClose, initialMessage }: ChatWidgetProps)
                 top_k: 3
             };
 
-            const response = await fetch('http://localhost:8000/chat', {
+            // Updated API endpoint
+            const response = await fetch('https://roboticai-hacakthon-book-rag-api.vercel.app/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -90,7 +92,7 @@ export default function ChatWidget({ onClose, initialMessage }: ChatWidgetProps)
                 id: (Date.now() + 1).toString(),
                 role: 'assistant',
                 content: data.answer,
-                sources: data.sources
+                sources: data.sources || []
             };
 
             setMessages(prev => [...prev, assistantMessage]);
@@ -101,7 +103,7 @@ export default function ChatWidget({ onClose, initialMessage }: ChatWidgetProps)
             const errorAssistantMessage: Message = {
                 id: (Date.now() + 1).toString(),
                 role: 'assistant',
-                content: `Sorry, I encountered an error: ${errorMessage}. Please make sure the API server is running at http://localhost:8000`
+                content: `Sorry, I encountered an error: ${errorMessage}. Please make sure you are connected to the internet.`
             };
 
             setMessages(prev => [...prev, errorAssistantMessage]);
@@ -168,7 +170,9 @@ export default function ChatWidget({ onClose, initialMessage }: ChatWidgetProps)
 
                         {msg.role === 'assistant' && (
                             <>
-                                <div className={styles.messageContent}>{msg.content}</div>
+                                <div className={`${styles.messageContent} ${styles.markdownContent}`}>
+                                    <ReactMarkdown>{msg.content}</ReactMarkdown>
+                                </div>
 
                                 {/* Display sources if available */}
                                 {msg.sources && msg.sources.length > 0 && (

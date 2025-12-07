@@ -57,6 +57,13 @@
   font-size: calc(1rem * var(--font-scale));
 }
 
+/* Custom Text Highlight for 'Ask AI' feature */
+::highlight(ask-ai-highlight) {
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  text-decoration: none;
+}
+
 [data-font-size="xl"] .markdown p,
 [data-font-size="xl"] .markdown li,
 [data-font-size="xl"] article {
@@ -686,9 +693,36 @@ pre code {
   text-decoration: none;
 }
 
-.footer__copyright {
-  margin-top: 2rem;
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 0.85rem;
-  font-weight: 400;
+
+/* ========================================
+   CUSTOM CARD STYLING (DocCardList)
+   ======================================== */
+.card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
 }
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  transform: translateY(-5px);
+  border-color: var(--ifm-color-primary) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card__title {
+  font-family: var(--ifm-font-family-headings);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--ifm-color-primary-light);
+  margin-bottom: 0.5rem;
+}
+
+.card__description {
+  color: var(--ifm-font-color-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+

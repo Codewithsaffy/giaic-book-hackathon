@@ -34,3 +34,7 @@ This chapter bridges the gap between artificial intelligence and robotics by dem
 ## Next Steps
 
 After completing this chapter, you'll be able to integrate AI systems with ROS 2 infrastructure. Proceed to Chapter 4 to learn about robot modeling using URDF.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

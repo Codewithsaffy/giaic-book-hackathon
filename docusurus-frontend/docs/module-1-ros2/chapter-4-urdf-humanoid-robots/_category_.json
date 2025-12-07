@@ -1,10 +1,9 @@
 {
-    "label": "Module 4: VLA Models",
+    "label": "Chapter 4: URDF for Humanoid Robots",
     "position": 4,
     "link": {
         "type": "doc",
         "id": "index"
     },
-    "collapsible": true,
     "collapsed": true
 }

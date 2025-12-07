@@ -34,3 +34,7 @@ Yeh chapter URDF (Unified Robot Description Format) ka istemal karke detailed ro
 ## Next Steps
 
 Yeh chapter complete karne ke baad, aapke paas ROS 2 aur humanoid robot modeling ka comprehensive knowledge hoga. Aap subsequent modules mein advanced topics ko tackle karne ke liye taiyar honge.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

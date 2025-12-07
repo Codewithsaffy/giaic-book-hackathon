@@ -173,3 +173,7 @@ This chapter will guide you through:
 5. Developing VR/AR interfaces for robot control
 
 Unity's capabilities for robotics simulation continue to expand, making it an increasingly important tool for creating sophisticated digital twins of robotic systems. The next sections will explore these capabilities in detail.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

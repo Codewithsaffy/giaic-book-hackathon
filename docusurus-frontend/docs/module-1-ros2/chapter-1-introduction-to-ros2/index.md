@@ -32,3 +32,7 @@ This chapter establishes the foundational knowledge required for working with RO
 ## Next Steps
 
 After completing this chapter, you'll have a solid understanding of ROS 2 fundamentals and a properly configured development environment. Proceed to Chapter 2 to dive deeper into ROS 2 communication patterns.
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

@@ -35,7 +35,7 @@ export default function Hero() {
                         </Link>
                         <Link
                             className={clsx(styles.glassCard, styles.secondaryButton)}
-                            to="/docs/category/module-1-ros2">
+                            to="/docs/module-1-ros2/">
                             Explore Modules
                         </Link>
                     </div>

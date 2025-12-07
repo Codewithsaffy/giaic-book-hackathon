@@ -33,3 +33,7 @@ Before diving into this chapter, make sure you have:
 ## Getting Started
 
 Select any topic from the sidebar to begin your journey into ROS 2 fundamentals!
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />
