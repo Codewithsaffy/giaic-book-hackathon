@@ -18,8 +18,9 @@ export default function TextSelectionButton(): JSX.Element {
             return;
         }
 
-        // Set the selected text as the question and open the chat
-        setSelectedQuestion(text);
+        // Format the selected text with "explain:" prefix
+        const formattedQuestion = `explain: ${text}`;
+        setSelectedQuestion(formattedQuestion);
         setIsChatOpen(true);
     };
 
