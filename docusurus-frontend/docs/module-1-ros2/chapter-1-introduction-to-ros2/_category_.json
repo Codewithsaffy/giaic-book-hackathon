@@ -1,0 +1,12 @@
+{
+    "label": "Chapter 1: Introduction to ROS 2",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "title": "Chapter 1: Introduction to ROS 2",
+        "description": "Learn the fundamentals of ROS 2, its architecture, and how it powers modern robotics",
+        "slug": "/category/chapter-1-introduction-to-ros2"
+    },
+    "collapsible": true,
+    "collapsed": false
+}

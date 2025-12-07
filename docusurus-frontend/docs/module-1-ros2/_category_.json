@@ -7,5 +7,6 @@
         "description": "Comprehensive guide to ROS 2 development for robotics applications",
         "slug": "/category/module-1-ros2"
     },
+    "collapsible": true,
     "collapsed": false
 }

@@ -1,0 +1,11 @@
+{
+    "label": "Module 4: VLA Models",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "title": "Module 4: Vision-Language-Action Models",
+        "description": "State-of-the-art VLA models for embodied AI and robot control",
+        "slug": "/category/module-4-vision-language-action"
+    },
+    "collapsed": false
+}

@@ -7,5 +7,6 @@
         "description": "Learn digital twin concepts and simulation tools for robotics",
         "slug": "/category/module-2-digital-twin"
     },
+    "collapsible": true,
     "collapsed": false
 }

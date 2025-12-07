@@ -52,22 +52,7 @@ export default function ChatWidget({ onClose, initialMessage }: ChatWidgetProps)
         scrollToBottom();
     }, [messages]);
 
-    // Auto-submit initial message if provided
-    useEffect(() => {
-        if (initialMessage && !hasSubmittedInitial) {
-            setHasSubmittedInitial(true);
-            setInput(initialMessage);
-
-            // Submit after a short delay to ensure UI is ready
-            setTimeout(() => {
-                const syntheticEvent = { preventDefault: () => { } } as React.FormEvent;
-                handleSubmitWithMessage(initialMessage, syntheticEvent);
-            }, 100);
-        }
-    }, [initialMessage, hasSubmittedInitial]);
-
-    const handleSubmitWithMessage = async (message: string, e: React.FormEvent) => {
-        e.preventDefault();
+    const handleSubmitWithMessage = async (message: string) => {
         if (!message.trim() || isLoading) return;
 
         const userMessage: Message = {
@@ -125,8 +110,18 @@ export default function ChatWidget({ onClose, initialMessage }: ChatWidgetProps)
         }
     };
 
+    // Auto-submit initial message if provided
+    useEffect(() => {
+        if (initialMessage && !hasSubmittedInitial) {
+            setHasSubmittedInitial(true);
+            // Submit immediately
+            handleSubmitWithMessage(initialMessage);
+        }
+    }, [initialMessage, hasSubmittedInitial]);
+
     const handleSubmit = async (e: React.FormEvent) => {
-        handleSubmitWithMessage(input, e);
+        e.preventDefault();
+        await handleSubmitWithMessage(input);
     };
 
     return (

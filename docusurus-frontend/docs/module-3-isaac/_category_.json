@@ -1,0 +1,11 @@
+{
+    "label": "Module 3: Isaac Sim & Simulation",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "title": "Module 3: Isaac Sim & Simulation",
+        "description": "Master NVIDIA Isaac Sim for robotics simulation and digital twins",
+        "slug": "/category/module-3-isaac"
+    },
+    "collapsed": false
+}
