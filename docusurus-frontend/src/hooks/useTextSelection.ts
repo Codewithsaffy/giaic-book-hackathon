@@ -32,6 +32,20 @@ export function useTextSelection(): TextSelectionState {
             if (selectedText) {
                 const range = window.getSelection()?.getRangeAt(0);
                 if (range) {
+                    // Check if selection is within documentation content
+                    const container = range.commonAncestorContainer;
+                    const parentElement = container.nodeType === Node.TEXT_NODE
+                        ? container.parentElement
+                        : container as HTMLElement;
+
+                    // Only show "Ask AI" if selection is within article/markdown content
+                    const isInDocContent = parentElement?.closest('article, .markdown, .theme-doc-markdown');
+
+                    if (!isInDocContent) {
+                        // Selection is not in documentation content, ignore it
+                        return;
+                    }
+
                     const rect = range.getBoundingClientRect();
 
                     // --- CSS Highlight API Implementation ---
