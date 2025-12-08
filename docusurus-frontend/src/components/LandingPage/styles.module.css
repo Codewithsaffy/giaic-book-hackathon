@@ -166,14 +166,14 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 8rem !important; /* Increased from 6rem to fix production spacing */
   overflow: hidden;
 }
 
 @media (min-width: 768px) {
   .heroSection {
     min-height: 90vh;
-    padding-top: 8rem;
+    padding-top: 10rem !important; /* Increased from 8rem */
   }
 }
 
