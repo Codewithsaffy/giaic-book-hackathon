@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
+import { FaRobot } from 'react-icons/fa';
 
 export default function Hero() {
     return (
@@ -13,7 +14,7 @@ export default function Hero() {
                 <div className={styles.heroContent}>
                     {/* Trust Badge / Eyebrow */}
                     <div className={clsx(styles.trustBadge, styles.animateFadeInUp)}>
-                        <span className={styles.trustBadgeIcon}>🤖</span>
+                        <span className={styles.trustBadgeIcon}><FaRobot /></span>
                         The Future of Robotics • ROS 2 & Isaac Sim • 2025 Edition
                     </div>
 

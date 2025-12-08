@@ -1,37 +1,38 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import { FaBrain, FaCity, FaBolt, FaEye, FaRobot, FaLanguage } from 'react-icons/fa';
 
 const features = [
     {
         title: 'ROS 2 Nervous System',
         desc: 'Deep dive into nodes, topics, actions, and services for robot control.',
-        icon: '🧠'
+        icon: <FaBrain />
     },
     {
         title: 'Digital Twins',
         desc: 'Simulate physics and environments with Gazebo Harmonics and Unity.',
-        icon: '🏙️'
+        icon: <FaCity />
     },
     {
         title: 'NVIDIA Isaac Sim',
         desc: 'Leverage GPU-accelerated simulation and Isaac Lab for training agents.',
-        icon: '⚡'
+        icon: <FaBolt />
     },
     {
         title: 'VLA Models',
         desc: 'Implement Vision-Language-Action models for multimodal reasoning.',
-        icon: '👁️'
+        icon: <FaEye />
     },
     {
         title: 'Humanoid Control',
         desc: 'Master kinematics, joint constraints, and URDF for humanoid robots.',
-        icon: '🤖'
+        icon: <FaRobot />
     },
     {
         title: 'Bilingual Learning',
         desc: 'Complete content available in both English and Roman Urdu.',
-        icon: '🌐'
+        icon: <FaLanguage />
     },
 ];
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import cls from './styles.module.css';
+import { FaBook } from 'react-icons/fa';
 
 const resources = [
     { title: "Video Tutorial Series", desc: "Watch hands-on coding sessions." },
@@ -19,7 +20,7 @@ export default function RelatedResources() {
                 <div className={cls.resourceGrid}>
                     {resources.map((r, i) => (
                         <div key={i} className={cls.resourceCard}>
-                            <div className={cls.resourceIcon}>📚</div>
+                            <div className={cls.resourceIcon}><FaBook /></div>
                             <div>
                                 <h4 className={cls.resourceTitle}>{r.title}</h4>
                                 <p className={cls.resourceDesc}>{r.desc}</p>

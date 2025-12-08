@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import { FaBook } from 'react-icons/fa';
 
 export default function KeyFeatures() {
     return (
@@ -45,7 +46,7 @@ export default function KeyFeatures() {
                         <div className={styles.bentoContent}>
                             <h3>Open Source</h3>
                             <p>100% Free & Open.</p>
-                            <div className={styles.bentoIconBig}>📖</div>
+                            <div className={styles.bentoIconBig}><FaBook /></div>
                         </div>
                     </div>
                 </div>

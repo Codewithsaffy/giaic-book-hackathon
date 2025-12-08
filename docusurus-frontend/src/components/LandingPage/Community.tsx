@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 import cls from './styles.module.css';
+import { FaComments, FaBug, FaEnvelope } from 'react-icons/fa';
 
 export default function Community() {
     return (
@@ -14,17 +15,17 @@ export default function Community() {
 
                     <div className={cls.communityGrid}>
                         <Link to="https://discord.gg/example" className={cls.communityCard}>
-                            <div className={cls.communityIcon}>💬</div>
+                            <div className={cls.communityIcon}><FaComments /></div>
                             <h3>Discussion Forum</h3>
                             <p>Join the conversation</p>
                         </Link>
                         <Link to="https://github.com/example/repo" className={cls.communityCard}>
-                            <div className={cls.communityIcon}>🐛</div>
+                            <div className={cls.communityIcon}><FaBug /></div>
                             <h3>Report Issues</h3>
                             <p>Contribute on GitHub</p>
                         </Link>
                         <div className={cls.communityCard}>
-                            <div className={cls.communityIcon}>📫</div>
+                            <div className={cls.communityIcon}><FaEnvelope /></div>
                             <h3>Newsletter</h3>
                             <p>Get monthly updates</p>
                         </div>
